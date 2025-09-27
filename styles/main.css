@@ -519,3 +519,35 @@ nav ul li {
     display: flex;
     align-items: center;
 }
+/* 调整导航栏底部对齐 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* 改为底部对齐 */
+    padding: 25px 0;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end; /* logo也底部对齐 */
+    animation: fadeInRight 0.8s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end; /* 导航链接底部对齐 */
+    animation: fadeInUp 0.8s ease-out 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* 确保所有导航元素在同一基线上 */
+.logo-text,
+nav a {
+    line-height: 1;
+    vertical-align: bottom;
+}
+
